@@ -1,4 +1,6 @@
+//--------------------------------------------------//
 //--demo for enum types
+//--------------------------------------------------//
 
 /*you add curly brace just like that.
 No colon, no equal sign, just curly braces after the name, then a semicolon.And now in here 
@@ -53,7 +55,22 @@ if(person.role === Role.ADMIN){
     console.log('is a Admin')
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+//--------------------------------------------------//
 //--demo for Any types
+//--------------------------------------------------//
 
 /*
 TypeScript will basically never yell at you when you use any back in our code here, 

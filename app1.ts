@@ -1,4 +1,7 @@
+//--------------------------------------------------//
 //--demo for number type
+//--------------------------------------------------//
+
 
 // function add (n1:number,n2:number){
     //JS typechecking (done in runtime whereas TS is done in dev time) 
@@ -59,7 +62,22 @@ let number15:number;
 // number15="5";
 
 
+
+
+
+
+
+
+
+
+
+
+
+//--------------------------------------------------//
 //--demo for object types
+//--------------------------------------------------//
+
+
 /*
 This is the object type inferred by typescript.
 And object types are written almost like objects.But of course, we don't have key value 
@@ -86,7 +104,21 @@ we see persons of type object.
 // console.log(person.nick)
 
 
+
+
+
+
+
+
+
+
+
+
+//--------------------------------------------------//
 //--demo for array types
+//--------------------------------------------------//
+
+
 // const person= {
 //     name:'Vivek',
 //     age:24,
@@ -108,7 +140,23 @@ we see persons of type object.
 // }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+//--------------------------------------------------//
 //--demo for typle types
+//--------------------------------------------------//
+
+
 // This year tells TypeScript, I want to have a special array with exactly two elements, 
 // because I have exactly two types in there, and the first element should be a number.
 

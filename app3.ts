@@ -1,4 +1,6 @@
+//--------------------------------------------------//
 //--Union Types
+//--------------------------------------------------//
 
 /*
 Now let's say we actually named as combine and it should work with both numbers and strings 
@@ -49,7 +51,16 @@ getting so that your function is able to work with multiple types of values.
 */
 
 
+
+
+
+
+
+
+
+//--------------------------------------------------//
 //--Literal Types
+//--------------------------------------------------//
 
 /*
 literal types are types where you don't just say that a certain variable or parameters 
@@ -114,8 +125,24 @@ to compile this.
 // console.log(combinedNames);
 
 
-//-- Type Aliases/Custom Types
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//--------------------------------------------------//
+//-- Type Aliases/Custom Types
+//--------------------------------------------------//
 /*
 Now, when working with union types like this and this, it can be cumbersome to always repeat 
 the union type, you might want to create a new type which again, stores this union type, 

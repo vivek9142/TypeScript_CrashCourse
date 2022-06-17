@@ -24,3 +24,5 @@ any         *                   any kind of value, no specific type assignment
 numbers to tuple - demonstrated in App1.TS
 enum - any - demonstrated in App2.TS
 unionType- Literal Types - Type Aliases/Custom Types - demonstrated in App3.TS
+Functions - Return Type - Func as Types - demonstrated in App4.TS
+Functions Types & Callbacks - The "unknown" Type - demonstrated in App5.TS

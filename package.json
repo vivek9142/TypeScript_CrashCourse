@@ -4,7 +4,7 @@
   "description": "Understanding TypeScript Course Setup",
   "main": "app.js",
   "scripts": {
-    "ts": "tsc app4.ts",
+    "ts": "tsc app5.ts",
     "start": "lite-server"
   },
   "keywords": [
