@@ -1,14 +1,14 @@
-****Adding Watch Mode
+## Adding Watch Mode
 Adding Watch Mode in Terminal for Single Ts File
 
-`tsc app.ts --watch`   
-        OR
-`tsc app.ts --w`
+`tsc app.ts --watch`   OR       `tsc app.ts --w`
 
 The downside is that we still have to specifically target this file here.
 And at the moment, of course, this is the only file we're working with, but typically in bigger projects,that's not necessarily the case.
 
-****Compiling the Entire Project / Multiple Files
+----
+
+## Compiling the Entire Project / Multiple Files
 
 We need to signify Ts that this is one project that should be managed with TypeScript and we do that by 
 
@@ -24,3 +24,5 @@ And you've got a short explanation here as well.
 And of course, this can all be combined with what mode you can run to watch as I showed before.And this will now enter watch mode for all typescript files.
 
 `tsc --w`
+
+----
