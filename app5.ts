@@ -78,14 +78,10 @@ without getting errors.So this is all allowed.
 // userInput = 'Max'; //this works
 
 /*
-But we'll run into issues if I have another variable, let's say user name, which should be a string
-
-and that's on initialized here.But then here I want to set username equal to user input.
-
-Now you see we're getting an error.
-
-The type unknown is not assignable to type string.
-
+But we'll run into issues if I have another variable, let's say user name, which should 
+be a string and that's on initialized here.But then here I want to set username 
+equal to user input.
+Now you see we're getting an error.The type unknown is not assignable to type string.
 So username once a string and of course unknown is not guaranteed to be a string here.
 */
 
@@ -113,10 +109,64 @@ for a user input being of type string user input is guaranteed to be a string
 and therefore I can safely assign to username.So I need such an extra type check 
 here with unknown to be able to assign an unknown value to a value
 with a fixed type and therefore unknown is the better choice over any.
-
+*/
+if(typeof userInput === 'string') userName = userInput;
+/*
 you have at least some type checking.Of course, if you have a chance of knowing 
 in advance that user input is always a string or always a string or a number, well, 
 then you should use string or a such a union type instead of unknown.
 So unknowns still is a type you shouldn't use all the time, but it is better than 
 any for the reasons described.
+*/
+
+
+
+
+
+
+
+//---------------------------------------------//
+//  The "never" Type
+//---------------------------------------------//
+
+/*Now we saw a function that returned wide so that never returns anything, never is another 
+type,Functions can return.
+Let's say we have a function generate error.Here, I expect to get a message which is a 
+string and maybe some error code, which might be a number now inside of this function, 
+let's say we throw an error. So this should essentially be a utility function 
+that generates error objects and throws them.
+*/
+
+function generateError(message:string,code:number){
+    throw {
+        message: message, 
+        errorCode:code
+    };
+}
+
+generateError('An Error Occured',500);
+
+/*
+Now, the interesting thing about this function is it does not just return void.I actually 
+can specify that it returns wide because of course it returns nothing.But actually it 
+does not just return nothing.
+If we're honest, this function returns never.this function never produces a return value.
+If I would try to restore the return value here and I console log result.And then.
+Compile my code and this executes we see there is no undefined being locked here 
+because since an erroris thrown, this essentially crashes our script.
+
+And hence the return type of dysfunction actually is not just white, but also never.
+
+Now, the interesting thing is, if you hover over it without assigning, never, you see 
+the inferred type is void also because never is a newer type.It's been around for some 
+time now, but it wasn't built into the first versions of TypeScript and therefore
+why it is typically assumed and it's not horrible to leave it at that.
+But you can be very clear and explicitly set never to return type to make it really 
+clear that this never returns anything.
+
+And no function that would never return, by the way, would be a function with an 
+infinite loop.So if we have, while true in there, that creates an infinite loop 
+and that therefore calls would be a function that never returns the error function 
+here or the function that generates and fro is an error probably is the more common 
+use case though.
 */
