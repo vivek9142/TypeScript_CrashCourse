@@ -128,3 +128,68 @@ So therefore, we want to set this to more reasonable values.
 `
 
 And this, by the way, is the exact default setup you get when you set Target to iOS six anyways.So if you comment design and set it up like this, you have exactly the same behavior as if you don't specify Lib at all.
+
+### allowJs
+you can also include JavaScript files in the compilation now with allow, just a JavaScript file will be compiled by TypeScript.
+So even if it doesn't end with thoughts, TypeScript will compile it.
+
+### checkJs
+
+with checkJs It will not compile it, but it will still check the syntax in there and report potential errors.
+
+But you could use that in projects where you don't want to use typescript at all or where, for whatever reason, you have some vanilla JavaScript files next to your typescript files and you want to check the vanilla JavaScript files as well.
+
+### sourceMap
+
+Source map helps us with debugging and development.It would be nice if we would see the typescript files here and not JavaScript files with the source map option.If you set this to true and you run the TSC command again, then you see we got these dot dot map files
+being generated as well.
+Now if we look at them, they're pretty strange files, but what they do is they basically act as a bridge, which is understood by modern browsers and developer tools there to connect the JavaScript files to the input files.So with these files generated, if I reload here, you see in the sources tab, we now not just have our JavaScript files, we also Ts files and we can even place breakpoints in the types of files.
+
+### outDir
+You often will see in projects is that you have a source folder and you have a dist folder
+next. So the disk folder has the job of holding all the output.So all the JavaScript files, let's say, and the source folder might hold all our types good files
+so we can move to TypeScript falls into the source folder.
+And if I now delete the JavaScript folder, we have the problem that if we compile everything, these types of files are compiled.Because, TypeScript, the compiler does look into sub folders, but the output sits next to our input files and that's something we can control with the outDir.
+
+For example, if we set outer, we can tell the typescript compiler where the created files should be stored.
+
+`
+"outDir": "./dist"
+`
+
+this folder structure you have in the source folder will also be replicated in the disk folder, which is of course very convenient because that makes sure that you can import the files basically as you would import them into source folder as well so that the structure you set up there is kept.
+
+### rootDir
+You can also set the root directory and set this specifically at the folder where your files are stored in like in this example source to make sure that the typescript compiler does not look in our folders. That's also something you could do with the include option down there.
+
+But with root directory, the typescript compiler will not just look only at that source folder. It also makes sure that project structure you set up there is kept in a disk folder.
+Now, it did so by default before, as you saw.But keep in mind that before it would have included any types of files here.Also outside of source.
+So, for example, if we comment this out temporarily, if we had a user folder here on the top level with a user TIAs file where we have a username of Max, let's say then if we compile this, you will also see that user folder in the folder.
+
+And now the source folder is included as well, because now we have a typescript file on a higher level and therefore the types of compiler thinks that our whole project, again, is the input and it replicates  folder structure it finds there in the dist folder.
+Now, that's, of course, not what we would want.
+
+### removeComments
+If you set this, then any comments you might have in your typescript, good files will be removed and compiled JavaScript files. So if I comment this in and I compile my code, you see an APTs, I have a comment and yes, it's not there. So you can do that to make your files smaller and therefore this might be a nice option.
+
+`
+"removeComments":true
+`
+
+### noEmit
+
+You can also set no limit if you don't want to generate any JavaScript files.Now, this might sound strange because that's the idea of TypeScript, but if you just want to check
+whether your files are correct, but you don't want to write all these output files to save some time,
+for example, in a bigger project, then you could set this to true to just have the types of compiler check your files and report any potential errors without actually creating an output file import.
+
+`
+"noEmit" : true
+`
+
+### downLevelIteration
+
+It is interesting when you compile your code to older versions of JavaScript and you work with for loops,
+
+then in some rare scenarios you could run into issues where the compilation doesn't work correctly.This option, if you turn it on, gives you a more exact compilation which will work in these in these
+
+cases.
