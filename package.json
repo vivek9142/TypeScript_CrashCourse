@@ -6,7 +6,8 @@
   "scripts": {
     "ts": "tsc ./01-Basics/app5.ts",
     "init": "tsc --init",
-    "start": "lite-server"
+    "start": "lite-server",
+    "ts-compile":"tsc --w"
   },
   "keywords": [
     "typescript",
