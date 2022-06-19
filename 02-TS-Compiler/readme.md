@@ -225,3 +225,37 @@ So we might be fine with compiling this despite having an error.
 
 Nonetheless, you could set this to false or not set it at all because falls to default.
 If you are fine with generating JavaScript files, if you have an error, if you set this to true, however, what will happen is that problematic files will not be generated if I now rerun this.And therefore, it is an option I typically like to set because I'm not interested in getting JavaScript files if I still have errors in my type code files.
+
+### Strict Options
+
+There is this strict true option.And actually what this does is it enables all strict type checking options.
+
+So effectively setting this is the same as if you would set all these options separately so you can ever set all these options one by one or just set this option.
+
+Of course, you want to set the individual options if you want to have some options set to false,otherwise they're all set to true.
+
+```typescript
+    "strict":true
+```
+    OR
+
+```typescript 
+    "noImplicitAny": true, //it ensures to be clear about its parameters, about values being sent within the code (especially in functions, not in normal var declaration)
+    "strictNullChecks": true,//it ensures TS to be strict in access and work with values that might hold a null value                     
+    "strictFunctionTypes": true, //related to function types you might be setting up.                   
+    "strictBindCallApply": true,                    
+    "strictPropertyInitialization": true,             
+    "noImplicitThis": true, //TS tries to warn you if you use the this key word in a place where it's not clear                        
+    "useUnknownInCatchVariables": true,               
+    "alwaysStrict": true, //It simply controls that the JavaScript files which are generated are using strict mode so that this is added.                           
+    "noUnusedLocals": true,  //TypeScript will complain if you have certain unused vars                              
+    "noUnusedParameters": true, //TS will warn if one or more params are unused                      
+    "exactOptionalPropertyTypes": true,               
+    "noImplicitReturns": true,  // we get an error if we have a function that sometimes returns something and sometimes it does not(e.g return in if cond).                    
+    "noFallthroughCasesInSwitch": true, //It helps in switch statements where you might forget the break keyword             
+    "noUncheckedIndexedAccess": true,                 
+    "noImplicitOverride": true,                        
+    "noPropertyAccessFromIndexSignature": true,
+    "allowUnusedLabels": true,                        
+    "allowUnreachableCode": true,    
+```
