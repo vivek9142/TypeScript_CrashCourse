@@ -188,8 +188,40 @@ for example, in a bigger project, then you could set this to true to just have t
 
 ### downLevelIteration
 
-It is interesting when you compile your code to older versions of JavaScript and you work with for loops,
+It is interesting when you compile your code to older versions of JavaScript and you work with for loops, then in some rare scenarios you could run into issues where the compilation doesn't work correctly.This option, if you turn it on, gives you a more exact compilation which will work in these in these cases.
 
-then in some rare scenarios you could run into issues where the compilation doesn't work correctly.This option, if you turn it on, gives you a more exact compilation which will work in these in these
+So therefore you might think you should always turn it on, but it will also output more verbose code.So you should only turn this on if you have loops and you see that you are generated code. suddenly behaves differently than it should regarding those loops.
 
-cases.
+----
+here is one other option, which is actually not even mentioned here, which I still want to mention
+
+### noEmitonError
+
+the no limit on error option you can set us to draw falls into default is false.
+And what does this do if we set it to false? Let me show you where this might be a problem.
+It is a problem if we introduce an error or it can be a problem.
+
+Let's say here I do have my button and I removed his exclamation mark.
+Now, even though we don't fully understand what's going on, the problem here simply is that TypeScript does not know that.
+
+
+```typescript 
+const button = document.querySelector('button');
+
+button.addEventListener('click',()=>{
+    console.log('clicked');
+})
+```
+
+If there is no element in the dorms that satisfying the selector, then this will return null.
+And that's basically what types of complaints about here we exis something on a potential null object,and that's not good.
+
+Now, that's an error we have here.If we compile our code, we also get this error here in the console.Nonetheless, the file is created.So even if I delete the file, it will be recreated.
+So even if we have an error typescript creates a JavaScript file, this might or might not be wanted.Maybe you have an error in your typescript file and you don't really know how to work around it.But, you know, it will not be a problem in the final app like here, even if we don't know about the exclamation mark.
+
+Well, if we don't know about the exclamation mark, we might not know how to disable this.
+They are basically.But still, we know that this will work in our page here.
+So we might be fine with compiling this despite having an error.
+
+Nonetheless, you could set this to false or not set it at all because falls to default.
+If you are fine with generating JavaScript files, if you have an error, if you set this to true, however, what will happen is that problematic files will not be generated if I now rerun this.And therefore, it is an option I typically like to set because I'm not interested in getting JavaScript files if I still have errors in my type code files.
