@@ -29,8 +29,8 @@ button.addEventListener('click',()=>{
     you want to pass in.
     */
     // clickHandler.bind(null);//error
-    clickHandler.bind(null,1);//error
-    // clickHandler.bind(null,'Error is not displayed');
+    // clickHandler.bind(null,1);//error
+     clickHandler.bind(null,'Error is not displayed');
 });
 
 

@@ -259,3 +259,11 @@ Of course, you want to set the individual options if you want to have some optio
     "allowUnusedLabels": true,                        
     "allowUnreachableCode": true,    
 ```
+
+
+### Debugging 
+
+for debugging you need tyo specify the webRoot in launch.json of .vscode folder as - 
+`
+"webRoot": "${workspaceFolder}/TypeScript_CrashCourse"
+`
