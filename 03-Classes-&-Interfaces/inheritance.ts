@@ -13,8 +13,20 @@ might have an inheritance can help us implement something like this.
 */
 
 class Dept {
+    /*
+    Private properties are really only accessible from inside the class in which they're 
+    defined, not classes that inherit from that class.So employees is available inside 
+    of the apartment, but not in classes based on the department.
     
-    private employees: string[] = [];
+    So accounting department doesn't have direct access to the employees property. If we 
+    want to grant that access and still make sure that it's not a property that can be 
+    changed from outside, we can switch it to protect it, protect that is like private.
+    But unlike private, it's now not just available in this class, but also in any class that extends
+    this class.
+    */
+    // private employees: string[] = [];
+    protected employees: string[] = [];
+
     constructor(private readonly id:string, public name: string){
        
     }
@@ -43,6 +55,15 @@ class ITDepartment extends Dept{
 class AccountingDepartment extends Dept{
     constructor(id:string,private reports: string[]){
         super(id,'Accounting');
+    }
+
+    //we can also override methods or properties of our base class.
+    //overriding methods
+    addEmployee(name:string){
+        if(name === 'Max') return;
+        this.employees.push(name); 
+        //give err "Property 'employees' is private and only accessible within class 'Dept'"
+        //will not give err when employees array is protected not private
     }
 
     addReports(text:string){
@@ -74,3 +95,7 @@ const acc =  new AccountingDepartment('d2',[]);
 acc.addReports('Something went wrong...');
 
 acc.printReports(); //['Something went wrong...']
+
+acc.addEmployee('Max');
+acc.addEmployee('Manu');
+acc.printEmployeeInformation()
