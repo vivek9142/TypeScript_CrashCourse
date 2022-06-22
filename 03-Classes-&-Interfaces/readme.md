@@ -15,3 +15,4 @@ TS implementation in Classes , function is also illustrated with interfaces.
 * Getters & Setters  - demonstrated in ***05-Getters&setters.TS***
 * Static Properties & Methods - demonstrated in ***06-staticProp&methods.TS***
 * Abstract Classes - demonstrated in ***07-AbstractClasses.TS***
+* Singletons & Private Constructors - demonstrated in ***08-Singleton&Private-Constructor.TS***
