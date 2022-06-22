@@ -65,7 +65,16 @@ interface can be used as a contract a class can implement and a class then has t
 */
 
 interface Greetable {
-    name: string;
+    /*
+     you can also add the read only modifier, you cannot add public or private
+     or anything like that.This is not possible on an interface, but you can add read only 
+     to make it clear that this property in whatever object you build based on this interface 
+     must only be set once and is read only thereafter so that it can't be changed after the 
+     object has been initialized.
+     This is also something if we use a type instead.
+     Which you can use on a type if you want to, though.
+    */
+    readonly name: string;
     greet(phrase:string):void;
 }
 /*
@@ -101,5 +110,7 @@ let user4: Greetable;
 
 user4 = new Person4('Max');
 user4.greet('Hi There - I am');
+
+// user4.name = ''; //will give error since it is readonly in greeting interface or type
 
 console.log(user4);
