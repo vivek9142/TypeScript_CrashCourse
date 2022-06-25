@@ -1,7 +1,7 @@
 ## Classes
 
-In this section,we have illustrated the Classes is demonstrated in TypeScript.
-Classes is explained into the details alongv with its supporting terminologies i.e,
+In this section,we have illustrated the Classes in TypeScript.
+Classes is explained into the details along with its supporting terminologies i.e,
 constructor, inheritance, this, access modifier , readonly , getters & setters , static methods and properties. 
 
 ### Concepts Locating Directories

@@ -1,7 +1,7 @@
 ## Advanced Types
 
-In this section,we have illustrated the Advanced types is demonstrated in TypeScript.
-TS implementation in Union,Intersection,Type Gurads and other advancned copcepts is also illustrated with interfaces.
+In this section,we have illustrated the Advanced types in TypeScript.
+TS implementation in Union,Intersection,Type Guards and other advanced concepts is also explained in brief.
 
 ### Concepts Locating Directories
 
