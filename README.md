@@ -59,7 +59,6 @@ This repository contains the TypeScript crash Course.Find below the Links of all
                               </ol>
                          </details>
                     </li>
-
                     <li>
                          Interfaces
                          <details>
