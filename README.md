@@ -39,7 +39,7 @@ This repository contains the TypeScript crash Course.Find below the Links of all
     </details>
 
 3.   [03-Classes-&-Interfaces](https://github.com/vivek9142/TypeScript_CrashCourse/tree/main/03-Classes-%26-Interfaces "Classes & Interfaces")
-   <br/> **Description** - contains TS classes and interfaces concepts containing many concepts and how to use them. Do open to know What this section is comprising of ! 
+     <br/> **Description** - contains TS classes and interfaces concepts containing many concepts and how to use them. Do open to know What this section is comprising of ! 
      
    <details>
            <summary>Read More</summary>
@@ -76,19 +76,19 @@ This repository contains the TypeScript crash Course.Find below the Links of all
            </ol>
     </details>
 
-4. [04-Advanced-Types](https://github.com/vivek9142/TypeScript_CrashCourse/tree/main/04-Advanced-Types "Advanced Types")
-   <br/> **Description** - contains TS advanced concepts and how to use them. Do open to know What this section is comprising of ! 
-     
-   <details>
-           <summary>Read More</summary>
-           <ol>
-                <li>Intersection Types</li>
-                <li>TypeGuards</li>
-                <li>Discriminating Unions</li>
-                <li>Type Casting</li>
-                <li>Index Properties</li>
-                <li>Function Overloads</li>
-                <li>Optional Chaining</li>
-                <li>Nullish Coalescing</li>
-           </ol>
-    </details>
+4.   [04-Advanced-Types](https://github.com/vivek9142/TypeScript_CrashCourse/tree/main/04-Advanced-Types "Advanced Types")
+     <br/> **Description** - contains TS advanced concepts and how to use them. Do open to know What this section is comprising of ! 
+          
+        <details>
+                <summary>Read More</summary>
+                <ol>
+                     <li>Intersection Types</li>
+                     <li>TypeGuards</li>
+                     <li>Discriminating Unions</li>
+                     <li>Type Casting</li>
+                     <li>Index Properties</li>
+                     <li>Function Overloads</li>
+                     <li>Optional Chaining</li>
+                     <li>Nullish Coalescing</li>
+                </ol>
+         </details>
