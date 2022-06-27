@@ -137,3 +137,10 @@ class DataStorage<T extends string | number | boolean > {
 
 // objStorage.removeItem({name:'Max'});
 // console.log(objStorage.getItems()); 
+
+/*
+you could have more than one generic type here as well, you're not limited to one type when 
+you work with classes. And you can also have methods which have their own generic types 
+inside of classes. So you could introduce new generic types in class methods if you have 
+some generic type, which only is needed in a certain method and not in the entire class.
+*/
