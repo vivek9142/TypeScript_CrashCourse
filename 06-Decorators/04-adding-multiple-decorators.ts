@@ -50,12 +50,3 @@ class Person9 {
 const pers3= new Person9();
 
 console.log(pers2);
-
-/*
-
-*/
-
-
-/*
-
-*/
