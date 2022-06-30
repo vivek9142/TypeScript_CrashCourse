@@ -1,7 +1,7 @@
 ## Generics
 
 In this section,we have illustrated the Generics.
-TS implementation of Generices concepts i.e, Generics Function & classes,Constraints, Special Typescript Types is explained in brief.
+TS implementation of Generics concepts i.e, Generics Function & classes,Constraints, Special Typescript Types is explained in brief.
 
 ### Concepts Locating Directories
 
