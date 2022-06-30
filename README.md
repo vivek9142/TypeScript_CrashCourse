@@ -91,3 +91,40 @@ This repository contains the TypeScript crash Course.Find below the Links of all
                      <li>Nullish Coalescing</li>
                 </ol>
          </details>
+
+5.   [05-Generics](https://github.com/vivek9142/TypeScript_CrashCourse/tree/main/05-Generics "Generics")
+     <br/> **Description** - contains TS Generics concepts and how to use them. Do open to know What this section is comprising of ! 
+          
+        <details>
+                <summary>Read More</summary>
+                <ol>
+                     <li>Generics</li>
+                     <li>User Defined Generics</li>
+                     <li>Another Generic Function</li>
+                     <li>The "keyof" Constraint</li>
+                     <li>Generic Class</li>
+                     <li>Generic Utility Types</li>
+                     <li>Generic Types vs Union Types</li>
+                </ol>
+         </details>
+
+
+6.   [06-Decorators](https://github.com/vivek9142/TypeScript_CrashCourse/tree/main/06-Decorators "Decorators")
+     <br/> **Description** - contains Decorators concepts and how to use them. Do open to know What this section is comprising of ! 
+          
+        <details>
+                <summary>Read More</summary>
+                <ol>
+                    <li>Decorators</li>
+                    <li>Creating Decorators Factories</li>
+                    <li>Building Decorators</li>
+                    <li>Adding Multiple Decorators</li>
+                    <li>Property Decorators</li>
+                    <li>Accessor & Parameter Decorators</li>
+                    <li>Decorators Execution</li>
+                    <li>Returning(or changing)class in Class Decorator</li>
+                    <li>Other Decorator Return Types</li> 
+                    <li>Example: Creating an "Autobind" Decorator</li>
+                    <li>Validation with Decorators</li>
+                </ol>
+         </details>
